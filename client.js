@@ -92,6 +92,8 @@ export default async function singleStorePerformanceTest(numberOfRequests) {
       queueLimit: 0,
     });
 
+    console.log(conn);
+
     await deleteAll({ conn });
 
     await singleStoreInsertionPerfTest({ conn, numberOfRequests });
