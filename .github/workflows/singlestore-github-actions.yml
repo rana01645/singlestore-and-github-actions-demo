@@ -1,4 +1,4 @@
-name: SingleStore and GitHub Actions demo
+name: SingleStore and GitHub Actions demo test
 on: push
 
 jobs:
