@@ -33,9 +33,7 @@ jobs:
         run: npm ci
 
       - name: Verify MySQL connection from host
-        run: |
-          sudo apt-get install -y mysql-client
-          mysql --host 127.0.0.1 --port 3306 -uroot -proot -e "SHOW DATABASES"
+        run: mysql --host 127.0.0.1 --port 3306 -uroot -proot -e "SHOW DATABASES"
 
       - name: Connect to SingleStore
         # Runs a script that creates a SingleStore table, populates
